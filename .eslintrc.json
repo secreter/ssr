@@ -1,0 +1,88 @@
+{
+    "parser":"babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended","plugin:react/recommended"],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "impliedStrict": true,
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-control-regex": 0,
+        "no-console": 1,
+        "no-eval": 1,
+        "no-implied-eval": 1,
+        "no-extra-boolean-cast": 0,
+        "no-empty": [
+            2,
+            {
+                "allowEmptyCatch": true
+            }
+        ],
+        "indent": [
+            2,
+            4,
+            {
+                "SwitchCase": 2
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "never"
+        ],
+        "block-spacing": [
+            "error",
+            "always"
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": false
+            }
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "space-in-parens": [
+            "error",
+            "never"
+        ],
+        "space-before-function-paren": [
+            "error",
+            "never"
+        ],
+        "block-scoped-var": "error",
+        "valid-jsdoc": 0,
+        "react/prop-types": 0
+    }
+}
